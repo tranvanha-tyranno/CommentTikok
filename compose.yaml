@@ -1,0 +1,12 @@
+services:
+  signaldesk:
+    build: .
+    ports:
+      - "127.0.0.1:8765:8765"
+    volumes:
+      - ./data:/app/data
+    env_file:
+      - path: .env
+        required: false
+    restart: unless-stopped
+    shm_size: 1gb

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="vi">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>SignalDesk · Comment Intelligence</title><link rel="icon" href="/static/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/static/style.css?v=20261107-media"></head>
+<body>
+<aside class="sidebar">
+  <a class="brand" href="/" aria-label="SignalDesk"><span class="brand-mark">s<span>·</span></span>SignalDesk<span class="brand-plus">↗</span></a>
+  <div class="workspace"><span class="workspace-icon">T</span><div>Không gian dữ liệu<small>Local workspace</small></div><span class="chevron">⌄</span></div>
+  <div class="nav-caption">WORKSPACE</div>
+  <nav>
+    <button class="nav-item active" data-page="review"><span>▤</span>Kho bình luận <b id="nav-pending">0</b></button>
+    <button class="nav-item" data-page="sources"><span>⌘</span>Nguồn thu thập</button>
+    <button class="nav-item" data-page="jobs"><span>◴</span>Tác vụ & nhật ký <i id="job-dot"></i></button>
+    <button class="nav-item" data-page="taxonomy"><span>◇</span>Bộ nhãn & domain</button>
+  </nav>
+  <div class="nav-caption second">CẤU HÌNH</div>
+  <button class="nav-item" data-page="settings"><span>⚙</span>Kết nối & mô hình</button>
+  <div class="sidebar-bottom"><div class="local-indicator"><i></i> Chạy trên máy của bạn</div><div class="profile"><span>TR</span><div>Người kiểm duyệt<small>Local reviewer</small></div><b>⋯</b></div></div>
+</aside>
+<main>
+  <header><div class="breadcrumb">Workspace <span>/</span> <strong id="crumb">Kho bình luận</strong></div><div class="header-right"><span class="pill"><i></i> LOCAL</span><button class="icon-button" id="refresh" title="Làm mới">↻</button><span class="avatar">TR</span></div></header>
+  <section class="page-heading"><div><div class="eyebrow">COMMENT INTELLIGENCE</div><h1 id="page-title">Kho bình luận</h1><p id="page-description">Thu thập có hệ thống. Gán nhãn có ngữ cảnh.</p></div><div id="heading-actions"></div></section>
+  <div id="page-content"></div>
+  <footer>SignalDesk <span>·</span> Dữ liệu rõ nguồn. Nhãn có thể kiểm chứng.<span class="footer-right">CLEAN / OFFENSIVE / HATE</span></footer>
+</main>
+<div id="drawer-backdrop" class="backdrop hidden"></div><aside id="drawer" class="drawer hidden" aria-label="Duyệt bình luận"></aside>
+<dialog id="modal"><div id="modal-content"></div></dialog>
+<div id="toast" role="status" class="toast hidden"></div>
+<input id="import-file" type="file" accept=".json,.jsonl,.csv" hidden>
+<script src="/static/app.js?v=20261107-media" defer></script>
+</body></html>
